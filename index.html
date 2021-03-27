@@ -13,8 +13,7 @@
 <header>
     <div class="header_container">
         <div class="service_container">
-            <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719">네이버를 시작페이지로</a>
-            <span class="text_hr"></span>
+            <a href="https://help.naver.com/support/contents/contents.help?serviceNo=1074&categoryNo=16719" class="set_home_btn">네이버를 시작페이지로</a>
             <a href="" class="link_jrnaver" target="_blank">
                 <i class="icon_jrnaver"></i>
             </a>
@@ -70,7 +69,20 @@
                                 <option>긍정부정검색</option>
                             </optgroup>
                         </select>
-                        <input type="text" class="input_text" maxlength="255" >
+                        <div class="search_area">
+                            <input type="text" class="input_text" maxlength="255" >
+                            <div class="btn_container">
+                                <button id="kbd_btn">
+                                    <span class="kbd_icon"></span>
+                                </button>
+                                <button id="arrow_btn">
+                                    <span class="arrow_icon"></span>
+                                </button>
+                                <button id="search_btn">
+                                    <span class="search_icon"></span>
+                                </button>
+                            </div>
+                        </div>
                     </fieldset>
                 </form>
             </div>
@@ -78,7 +90,7 @@
         </div>
     </div>
     <nav id="gnb">
-        <div style="width: 1140px; display: flex; margin: 0 auto; align-items: center; justify-content: space-between;">
+        <div class="gnb_container">
             <ul class="nav_list">
                 <li class="nav_item">
                     <span class="mail_icon"></span>
@@ -321,13 +333,27 @@
     <!--left side-->
     <section class="main_left_container">
         <div class="ad_container">
-
+            <a href="http://edu.brain-study.co.kr/edu/Rental_wcomms/on_land/500p-01-15.html?code=rental_O_naverbrand_500P_B1" target="_blank" class="ad_content">
+                <img src="img/ad/01.png" alt="뇌새김 광고" width="750" height="135">
+            </a>
+            <a href="http://ra.speakingmax.com/DA/page.html?_NC=1349&utm_campaign=sa&utm_source=naver&utm_medium=brandsa&utm_term=pc_db&utm_content=ipadpro_db_site" target="_blank" class="ad_content">
+                <img src="img/ad/02.png" alt="스피킹맥스 광고" width="750" height="135">
+            </a>
+            <a href="https://www.worldvision.or.kr/campaign/2021/zipbap/21-zipbap.asp?mcode=10020&utm_source=navertime&utm_medium=banner&utm_campaign=21_zipbap&utm_content=1415&utm_term=L2" target="_blank" class="ad_content">
+                <img src="img/ad/03.png" alt="사랑의 도시락 광고" width="750" height="135">
+            </a>
         </div>
         <div class="news_stand">
             <div class="news_stand_header">
                 <a href="https://news.naver.com/main/list.nhn?mode=LPOD&mid=sec&sid1=001&sid2=140&oid=001&isYeonhapFlash=Y" class="link_media">
                     연합뉴스
                 </a>
+                <div id="recent_news">
+                    <p>안녕하세요 신입 퍼블리셔 박승주입니다.</p>
+                    <p>프론트엔드 개발자를 목표로 공부하고 있고</p>
+                    <p>최종목표이자 꿈은 풀스텍 개발자가 되는것입니다.</p>
+                    <p>아직 부족하지만 잘 부탁드립니다.</p>
+                </div>
             </div>
             <div class="news_stand_title">
                 <a href="" class="link_news_stand">뉴스스탠드</a>
@@ -832,7 +858,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18903926" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/02.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/02.jpg" alt="[선공개] 김동현이 꼽은 🥊연예계 싸움 서열🥊?!, MBC 210310 방송" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -850,7 +876,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18814202" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/03.png" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/03.png" alt="전설의 그 이름, 김연두 지현호라고 들어봤나?! [오늘부터 계약연애] 연두&현호 라떼인터뷰" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -868,7 +894,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18890212" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/04.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/04.jpg" alt="원진아의 사과를 받아들인 로운 ＂선배, 키스해도 돼요?＂ | JTBC 210309 방송" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -886,7 +912,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18795366" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/05.png" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/05.png" alt="우리 사귀는 거 믿게 해줄게 [오늘부터 계약연애] EP04 연애를 증명하는 방법" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -904,7 +930,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18677800" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/06.png" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/06.png" alt="전여친에게 새 남친이 생겼다 [오늘부터 계약연애] EP02 계약 연애도 결국은 연애다" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -922,7 +948,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18753782" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/07.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/07.jpg" alt="[와썹맨X] 한겨울에 즐기는 물놀이? 제대로 물 만난 얼간크루 진정한 물아일체ㅣEP.6" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -940,7 +966,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18519353" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/08.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/08.jpg" alt="[와썹맨X] 한우 100만원 먹방 걸어봅니다! 이 구역 최고의 빙(氷)신은?😂ㅣEP.4" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -958,7 +984,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18645884" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/09.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/09.jpg" alt="[와썹맨X] 자비란 없습니다...평균나이 40세 ★막장 눈싸움 레전드★ 과연 승자는???ㅣEP.5" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1323,7 +1349,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18903926" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/02.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/02.jpg" alt="[선공개] 김동현이 꼽은 🥊연예계 싸움 서열🥊?!, MBC 210310 방송" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1341,7 +1367,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18814202" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/03.png" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/03.png" alt="전설의 그 이름, 김연두 지현호라고 들어봤나?! [오늘부터 계약연애] 연두&현호 라떼인터뷰" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1359,7 +1385,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18890212" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/04.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/04.jpg" alt="원진아의 사과를 받아들인 로운 ＂선배, 키스해도 돼요?＂ | JTBC 210309 방송" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1377,7 +1403,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18795366" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/05.png" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/05.png" alt="우리 사귀는 거 믿게 해줄게 [오늘부터 계약연애] EP04 연애를 증명하는 방법" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1395,7 +1421,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18677800" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/06.png" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/06.png" alt="전여친에게 새 남친이 생겼다 [오늘부터 계약연애] EP02 계약 연애도 결국은 연애다" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1413,7 +1439,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18753782" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/07.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/07.jpg" alt="[와썹맨X] 한겨울에 즐기는 물놀이? 제대로 물 만난 얼간크루 진정한 물아일체ㅣEP.6" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1431,7 +1457,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18519353" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/08.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/08.jpg" alt="[와썹맨X] 한우 100만원 먹방 걸어봅니다! 이 구역 최고의 빙(氷)신은?😂ㅣEP.4 " width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1449,7 +1475,7 @@
                         </a>
                         <a class="media_area" href="https://tv.naver.com/v/18645884" target="_blank">
                             <div class="media_thumb">
-                                <img src="img/theme_01/media_01/09.jpg" alt="" width="232" height="130">
+                                <img src="img/theme_01/media_01/09.jpg" alt="[와썹맨X] 자비란 없습니다...평균나이 40세 ★막장 눈싸움 레전드★ 과연 승자는???ㅣEP.5" width="232" height="130">
                                 <i class="pm_ico_play">
                                     <span>재생</span>
                                 </i>
@@ -1560,7 +1586,7 @@
                             </li>
                             <li class="poster_thumb">
                                 <a href="">
-                                    <img src="img/theme_01/poster/07.gif" alt="" width="130" height="130">
+                                    <img src="img/theme_01/poster/07.gif" alt="깊은 향, R-O-S-E" width="130" height="130">
                                     <div class="poster_info">
                                         <strong class="title">
                                             깊은 향, R-O-S-E
@@ -1586,7 +1612,7 @@
                             </li>
                             <li class="poster_thumb">
                                 <a href="">
-                                    <img src="img/theme_01/poster/09.jpg" alt="" width="130" height="130">
+                                    <img src="img/theme_01/poster/09.jpg" alt="깊은 향, R-O-S-E" width="130" height="130">
                                     <div class="poster_info">
                                         <strong class="title">
                                             깊은 향, R-O-S-E
@@ -1599,7 +1625,7 @@
                             </li>
                             <li class="poster_thumb">
                                 <a href="">
-                                    <img src="img/theme_01/poster/10.jpg" alt="" width="130" height="130">
+                                    <img src="img/theme_01/poster/10.jpg" alt="깊은 향, R-O-S-E" width="130" height="130">
                                     <div class="poster_info">
                                         <strong class="title">
                                             깊은 향, R-O-S-E
@@ -2028,7 +2054,7 @@
                             <li class="goods_item">
                                 <a href="" class="goods_area">
                                     <div class="thumb_box">
-                                        <img src="img/shop/group_plus/fashion/01.jpg" alt="" width="163" height="163">
+                                        <img src="img/shop/group_plus/fashion/01.jpg" alt="여리여리~이너 티셔츠" width="163" height="163">
                                     </div>
                                     <p class="title">
                                         여리여리~이너 티셔츠
@@ -2038,7 +2064,7 @@
                             <li class="goods_item">
                                 <a href="" class="goods_area">
                                     <div class="thumb_box">
-                                        <img src="img/shop/group_plus/fashion/02.jpg" alt="" width="163" height="163">
+                                        <img src="img/shop/group_plus/fashion/02.jpg" alt="내가 찾던 데일리 이어링" width="163" height="163">
                                     </div>
                                     <p class="title">
                                         내가 찾던 데일리 이어링
@@ -2050,7 +2076,7 @@
                             <li class="goods_item">
                                 <a href="" class="goods_area">
                                     <div class="thumb_box">
-                                        <img src="img/shop/group_plus/fashion/01.jpg" alt="" width="163" height="163">
+                                        <img src="img/shop/group_plus/fashion/01.jpg" alt="여리여리~이너 티셔츠" width="163" height="163">
                                     </div>
                                     <p class="title">
                                         여리여리~이너 티셔츠
@@ -2060,7 +2086,7 @@
                             <li class="goods_item">
                                 <a href="" class="goods_area">
                                     <div class="thumb_box">
-                                        <img src="img/shop/group_plus/fashion/02.jpg" alt="" width="163" height="163">
+                                        <img src="img/shop/group_plus/fashion/02.jpg" alt="내가 찾던 데일리 이어링" width="163" height="163">
                                     </div>
                                     <p class="title">
                                         내가 찾던 데일리 이어링
@@ -2087,7 +2113,7 @@
             <div class="public_container">
                 <a href="http://museum.nec.go.kr/museum2018/bbs/1/4/1/20171025110910225100_view.do?article_id=20210224102010017100" class="public_wrap" target="_blank">
                     <div>
-                        <img src="img/footer/01.jpg" alt="" width="160" height="86">
+                        <img src="img/footer/01.jpg" alt="중앙선거관리위원회" width="160" height="86">
                     </div>
                     <div class="public_info">
                         <em>중앙선거관리위원회</em>
@@ -2211,56 +2237,9 @@
 </footer>
 
 <script src="jquery/jquery-3.6.0.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.page_up_btn').click(function() {
-        $( 'html, body' ).animate( { scrollTop : 0 },0 );
-    });
-    });
-    
-    $(document).ready(function(){
-        var $modeState = 0;
-        $(".dark_mode_btn").click(function() {
-            if($modeState == 0) {
-                $("header,footer,.news_stand_header,.login,.group_mall,.theme_link_container").css("backgroundColor", "#292a2d");
-                $("body").css("backgroundColor", "#1e1f21");
-                $("*").css("borderColor", "#3a3b3d").css("color","#d9d9d9");
-                $(".dark_mode_btn").attr("class","light_mode_btn");
-                $modeState = 1;
-            }
-            else {
-                $("header").css("backgroundColor", "#fff");
-                $("footer,.news_stand_header,.login,.group_mall,.theme_link_container").css("backgroundColor", "#fafbfc");
-                $("body").css("backgroundColor", "#fff");
-                $("*").css("borderColor", "#dae1e6").css("color","#000");
-                $(".link_partner, .dsc, .login p, .corp_item a, .corp_item strong").css("color","#808080");
-                $(".link_login").css("color","#fff");
-                $(".min_temp").css("color","#2586ee");
-                $(".max_temp").css("color","#e9564a");
-                $(".nav_content:lt(7)").css("color","#03c75a");
-                $(".search_box").css("borderColor", "#19ce60");
-                $(".light_mode_btn").attr("class","dark_mode_btn");
-                $modeState = 0;
-            }
-        });
-    });
-</script>
-<script type="text/javascript">
-    /*weather api*/
-    $(document).ready(function getWeather(){
-        $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=69abe2b2fb7877e26a77c1a7747874e9&units=metric",function(data){
-            /*variables*/
-            var $current_temp = data.main.temp;
-            var $min_temp = data.main.temp_min;
-            var $max_temp = data.main.temp_max;
-            var $weather_icon = data.weather[0].icon;
-
-            $(".search_content").append(
-                '<img alt="weather icon" class="weather_icon" src="http://openweathermap.org/img/wn/'+ $weather_icon +'@2x.png">',
-                '<p class="title">' + $current_temp.toFixed(1) + 'º</p>'+'<span class="min_temp">'+$min_temp+'.0º</span>'+'<span class="max_temp">'+$max_temp+ '.0º</span>' + '<span>서울</span>'
-            );
-    });
-    });
-</script>
+<script type="text/javascript" src="jquery/btn_effect.js"></script>
+<script type="text/javascript" src="jquery/weather_api.js"></script>
+<script type="text/javascript" src="jquery/update_news.js"></script>
+<script type="text/javascript" src="jquery/change_ad.js"></script>
 </body>
 </html>
