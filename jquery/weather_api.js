@@ -9,7 +9,7 @@
 
             $(".search_content").append(
                 '<img alt="weather icon" class="weather_icon" src="http://openweathermap.org/img/wn/'+$weatherIcon+'@2x.png">',
-                '<p class="title">' + $currentTemp.toFixed(1) + 'º</p>'+'<span class="min_temp">'+$minTemp+'.0º</span>'+'<span class="max_temp">'+$maxTemp+ '.0º</span>' + '<span>서울</span>'
+                '<p class="title">' + $currentTemp.toFixed(1) + '°</p>'+'<span class="min_temp">'+$minTemp+'.0°</span>'+'<span class="max_temp">'+$maxTemp+ '.0°</span>' + '<span>서울</span>'
             );
     });
     });
