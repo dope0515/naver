@@ -93,16 +93,20 @@ $naver2 : #19ce60;
     background-repeat: no-repeat;
 }
 @mixin blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+    display: none;
 }
 @mixin top_story_info {
     display: block;
     padding: 16px 18px 0 0;
+}
+@mixin icon($width,$height,$backgroundSize,$backgroundPosition) {
+    width: $width;
+    height: $height;
+    display: inline-block;
+    background-image: url(../img/sp_main_icons.png);
+    background-size: $backgroundSize;
+    background-position: $backgroundPosition;
+    background-repeat: no-repeat;
 }
 /*header*/
 header {
@@ -131,26 +135,14 @@ header {
             }
             .set_home_btn::after {
                 content: '';
-                width: 26px;
-                height: 26px;
+                @include icon(26px, 26px, 440px 410px,-382px -213px);
                 margin: 0 4px;
-                display: inline-block;
-                background-image: url(../img/sp_main_icons.png);
-                background-position: -382px -213px;
-                background-size: 440px 410px;
-                background-repeat: no-repeat;
                 vertical-align: top;
             }
             .link_jrnaver {
                 .icon_jrnaver {
-                    width: 60px;
-                    height: 10px;
+                    @include icon(60px, 10px, 440px 410px,-333px -267px);
                     margin:0 12px 2px 0;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -333px -267px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
                     vertical-align: top;
                 }
                 .icon_jrnaver:hover {
@@ -159,14 +151,8 @@ header {
             }
             .link_happybin {
                 .icon_happybin {
-                    width: 34px;
-                    height: 11px;
+                    @include icon(34px, 11px, 440px 410px,-257px -308px);
                     margin-bottom: 1px;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -257px -308px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
                     vertical-align: top;
                 }
                 .icon_happybin:hover {
@@ -191,12 +177,7 @@ header {
                 top: -26px;
     
                 #logo{
-                    width: 100%;
-                    height: 100%;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-size: 440px 410px;
-                    background-position: 0px -160px;
+                    @include icon(100%, 100%, 440px 410px,0px -160px);
                 }
             }
     
@@ -233,26 +214,14 @@ header {
                         #kbd_btn {
                             margin-right: 6px;
                             .kbd_icon {
-                                width: 20px;
-                                height: 12px;
-                                display: inline-block;
-                                background-position: -420px -248px;
-                                background-repeat: no-repeat;
-                                background-image: url(../img/sp_main_icons.png);
-                                background-size: 440px 410px;
+                                @include icon(20px, 12px, 440px 410px,-420px -248px);
                                 vertical-align: -4px;
                             }
                         }
                         #arrow_btn {
                             margin-right: 6px;
                             .arrow_icon {
-                                width: 10px;
-                                height: 5px;
-                                display: inline-block;
-                                background-position: -404px -258px;
-                                background-repeat: no-repeat;
-                                background-image: url(../img/sp_main_icons.png);
-                                background-size: 440px 410px;
+                                @include icon(10px, 5px, 440px 410px,-404px -258px);
                             }
                         }
                         #search_btn {
@@ -260,13 +229,7 @@ header {
                             height: 52px;
                             background-color: $naver2;
                             .search_icon {
-                                width: 22px;
-                                height: 22px;
-                                display: inline-block;
-                                background-position: -180px -386px;
-                                background-repeat: no-repeat;
-                                background-image: url(../img/sp_main_icons.png);
-                                background-size: 440px 410px;
+                                @include icon(22px, 22px, 440px 410px,-180px -386px);
                             }
                         }
                     }
@@ -299,24 +262,12 @@ header {
                 align-items: center;
     
                 .mail_icon {
-                    width: 21px;
-                    height: 21px;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -228px -386px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
+                    @include icon(21px, 21px, 440px 410px,-228px -386px);
                     margin: -8px 10px 0 0px;
                 }
     
                 .tv_icon {
-                    width: 12px;
-                    height: 14px;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -256px -212px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
+                    @include icon(12px, 14px, 440px 410px,-256px -212px);
                     margin: -4px 4px 0 0;
                 }
     
@@ -326,14 +277,8 @@ header {
     
                 }
                 .down_arrow {
-                    width: 11px;
-                    height: 7px;
+                    @include icon(11px, 7px, 440px 410px,-319px -258px);
                     margin-bottom: 2px;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -319px -258px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
                 }     
                 
                 
@@ -358,13 +303,6 @@ header {
             justify-content: flex-end;
             align-items: center;
             position: absolute;
-            /*
-            animation-name: txt_move_gone;
-            animation-duration: 0.5s;
-            animation-delay: 2s;
-            animation-iteration-count: 1;
-            animation-fill-mode: forwards;
-            */
             font-size: 13px;
             .weather_icon {
                 width: 58px;
@@ -386,24 +324,6 @@ header {
                 font-size: 13px;
                 margin-right: 8px;
                 color: #e9564a;
-            }
-        }
-        @keyframes txt_move_gone {
-            from {
-                top: 5px;
-            }
-    
-            to {
-                top:-30px;
-            }
-        }
-        @keyframes txt_move_show {
-            from {
-                top: 30px;
-            }
-    
-            to {
-                top:5px
             }
         }
     }
@@ -448,12 +368,18 @@ header {
     /*main left container*/
     .main_left_container {
         width: 750px;
+        h2 {
+            @include blind();
+        }
         .ad_container {
             width: 100%;
             height: 135px;
             border: 1px solid #dae1e6;
             .ad_content {
                 display: none;
+            }
+            .show_ad {
+                display: block;
             }
         }
 
@@ -475,14 +401,8 @@ header {
                 }
                 .link_media::after {
                     content: '';
-                    width: 6px;
-                    height: 10px;
-                    display: inline-block;
+                    @include icon(6px, 10px, 440px 410px,-262px -125px);
                     margin: 7px 0 0 6px;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -262px -125px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
                 }
                 #recent_news {
                     height: 16px;
@@ -505,26 +425,14 @@ header {
                 }
                 .link_news_stand::before {
                     content: '';
-                    display: inline-block;
-                    width: 27px;
-                    height: 24px;
+                    @include icon(27px, 24px, 440px 410px,-228px -296px);
                     margin: -6px 1px 0 0;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -228px -296px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
                     vertical-align: top;
                 }
                 .link_news_stand::after {
                     content: '';
-                    display: inline-block;
-                    width: 7px;
-                    height: 11px;
+                    @include icon(7px, 11px, 440px 410px,-410px -226px);
                     margin-left:6px;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -410px -226px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
                 }
                 .news_stand_view_btn {
                     position: absolute;
@@ -532,34 +440,16 @@ header {
                     display: flex;
                     align-items: center;
                     .btn_set_list {
-                        width: 14px;
-                        height: 13px;
-                        display: inline-block;
-                        background-image: url(../img/sp_main_icons.png);
-                        background-position: -420px -379px;
-                        background-size: 440px 410px;
-                        background-repeat: no-repeat;
+                        @include icon(14px, 13px, 440px 410px,-420px -379px);
                         margin: 0 9px;
                         opacity: 0.7;
                     }
                     .btn_set_icon {
-                        width: 13px;
-                        height: 13px;
-                        display: inline-block;
-                        background-image: url(../img/sp_main_icons.png);
-                        background-position: -153px -327px;
-                        background-size: 440px 410px;
-                        background-repeat: no-repeat;
+                        @include icon(13px, 13px, 440px 410px,-153px -327px);
                         margin: 0 9px;
                     }
                     .btn_set {
-                        width: 15px;
-                        height: 15px;
-                        display: inline-block;
-                        background-image: url(../img/sp_main_icons.png);
-                        background-position: -420px -276px;
-                        background-size: 440px 410px;
-                        background-repeat: no-repeat;
+                        @include icon(15px, 15px, 440px 410px,-440px -410px);
                         margin: 0 9px;
                         opacity: 0.7;
                     }
@@ -595,7 +485,7 @@ header {
                 button:hover {
                     cursor: pointer;
                 }
-                .thumb_box_container_01 {
+                .thumb_box_container {
                     width: 100%;
                     height: 100%;
                     display: flex;
@@ -651,7 +541,10 @@ header {
                     .thumb_box:hover .popup_box{
                         display: flex;
                     }
-                }       
+                }
+                .thumb_box_container:nth-child(n+2) {
+                    display: none;
+                }
             }
         }
         #theme_contents_container {
@@ -670,13 +563,7 @@ header {
                 }
                 .set_interest::before {
                     content: '';
-                    width: 11px;
-                    height: 11px;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-position: -319px -308px;
-                    background-size: 440px 410px;
-                    background-repeat: no-repeat;
+                    @include icon(11px, 11px, 440px 410px,-319px -308px);
                     margin-right: 4px;
                     vertical-align: -1px;
                 }
@@ -746,8 +633,10 @@ header {
                             border-right: none;
                         }
                         .category_item:first-child button  {
-                            
                             color: #fff;
+                        }
+                        .category_item:focus{
+                            background-color: #2586ee;
                         }
                     }
                 }
@@ -758,7 +647,7 @@ header {
             height: auto;
             border-bottom: 1px solid #dae1e6;
             padding-bottom: 18px;
-            .theme_01 {
+            .theme_container {
                 .top_story {
                     padding-bottom: 18px;
                     .top_story_inner {
@@ -788,12 +677,15 @@ header {
                             font-size: 12px;
                             margin-bottom: 6px;
                         }
-                        strong {
+                        .info_title {
                             font-size: 13px;
                             line-height: 1.4;
                             margin-bottom: 6px;
                         }
                     }
+                    .top_story_info:hover .info_title {
+                        text-decoration: underline;
+                    }    
                 }    
                 .theme_item {
                     display: flex;
@@ -874,14 +766,8 @@ header {
                     text-decoration: underline;
                 }
                 .theme_title a.title::after {
-                    width: 7px;
-                    height: 11px;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-size: 440px 410px;
-                    background-position: -410px -213px;
-                    background-repeat: no-repeat;
                     content: '';
+                    @include icon(7px, 11px, 440px 410px,-410px -213px);
                 }
                 .media_view_container {
                     width: 100%;
@@ -897,15 +783,10 @@ header {
                             position: relative;
                             overflow: hidden;
                             .pm_ico_play {
-                                width: 24px;
-                                height: 28px;
+                                @include icon(24px, 28px, 440px 410px,-202px -296px);
                                 position: absolute;
                                 bottom: 8px;
                                 left: 12px;
-                                background-image: url(../img/sp_main_icons.png);
-                                background-position: -202px -296px;
-                                background-repeat: no-repeat;
-                                background-size: 440px 410px;
                             }
                             .pm_ico_play span {
                                 @include blind();
@@ -932,7 +813,7 @@ header {
                                 -webkit-line-clamp: 2;
                                 -webkit-box-orient: vertical;
                                 line-height: 20px;
-                                letter-spacing: -0.25;
+                                letter-spacing: -0.25px;
                             }
                         }
                     }
@@ -1014,13 +895,7 @@ header {
                                 }
                                 .link_play::before {
                                     content: '';
-                                    width: 11px;
-                                    height: 15px;
-                                    display: inline-block;
-                                    background-image: url(../img/sp_main_icons.png);
-                                    background-size: 440px 410px;
-                                    background-position: -256px -228px;
-                                    background-repeat: no-repeat;
+                                    @include icon(11px, 15px, 440px 410px,-256px -228px);
                                     vertical-align: top;
                                     margin: 6px;
                                 }
@@ -1032,13 +907,7 @@ header {
                                 }
                                 .link_lyrics::before {
                                     content: '';
-                                    width: 17px;
-                                    height: 18px;
-                                    display: inline-block;
-                                    background-image: url(../img/sp_main_icons.png);
-                                    background-size: 440px 410px;
-                                    background-position: -420px -192px;
-                                    background-repeat: no-repeat;
+                                    @include icon(17px, 18px, 440px 410px,-420px -192px);
                                     vertical-align: top;
                                     margin: 5px;
                                 }
@@ -1143,14 +1012,8 @@ header {
                 font-weight: 700;
                 text-align: center;
                 .ico_naver {
-                    display: inline-block;
-                    width: 60px;
-                    height: 12px;
+                    @include icon(60px, 12px, 440px 410px,-271px -267px);
                     margin: 2px 5px 0 0;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-size: 440px 410px;
-                    background-position: -271px -267px;
-                    background-repeat: no-repeat;
                     vertical-align: top;
                 }
             }
@@ -1168,13 +1031,7 @@ header {
                 }
                 .look_box a:first-child::before {
                     content: '';
-                    display: inline-block;
-                    width: 10px;
-                    height: 14px;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-size: 440px 410px;
-                    background-position: -408px -55px;
-                    background-repeat: no-repeat;
+                    @include icon(10px, 14px, 440px 410px,-408px -55px);
                     vertical-align: top;
                     margin: -1px 1px 1px;
                 }
@@ -1190,13 +1047,7 @@ header {
                 }
                 .link_join::before {
                     content: '';
-                    width: 11px;
-                    height: 11px;
-                    display: inline-block;
-                    background-image: url(../img/sp_main_icons.png);
-                    background-size: 440px 410px;
-                    background-position: -332px -308px;
-                    background-repeat: no-repeat;
+                    @include icon(11px, 11px, 440px 410px,-332px -308px);
                     vertical-align: -1px;                    
                 }
                 a:hover {
@@ -1207,7 +1058,7 @@ header {
         }
         .time_square {
             margin: 12px 0;
-            padding: 10px 0 10px 16px;
+            padding: 14px 0 14px 16px;
             border: 1px solid #dae1e6;
             letter-spacing: 0.25px;
             display: flex;
@@ -1221,32 +1072,10 @@ header {
                     padding: 1px 6px;
                 }
             }
-            .btn_wrap {
-                display: flex;
-                margin-right: 16px;
-                .btn_next {
-                    border: 1px solid #e4e8eb;
-                }
-                .btn_next::before {
-                    content: '';
-                    @include next_btn_s();
-                }
-                .btn_prev {
-                    border: 1px solid #e4e8eb;
-                    border-right: none;
-                }
-                .btn_prev::before {
-                    content: '';
-                    @include prev_btn_s();
-                }
-            }
         }
         .brand_container {
             width: 350px;
             height: 200px;
-            .img_link {
-
-            }
         }
         .shop_container {
             margin-top: 15px;
@@ -1461,6 +1290,9 @@ header {
                             }
                         }
                     }
+                    .list_event:nth-child(n+2){
+                        display: none;
+                    }
                 }
                 .group_plus {
                     padding: 20px 0 30px;
@@ -1535,39 +1367,21 @@ header {
         right: 30px;
         z-index: 100;
         .dark_mode_btn {
-            width: 136px;
-            height: 53px;
-            display: inline-block;
-            background-image: url(../img/sp_main_icons.png);
-            background-size: 440px 410px;
-            background-position: -270px -55px;
-            background-repeat: no-repeat;
+            @include icon(136px, 53px, 440px 410px,-270px -55px);
             vertical-align: top;
         }
         .dark_mode_btn:hover {
             background-position: -270px -110px;
         }
         .light_mode_btn {
-            width: 148px;
-            height: 53px;
-            display: inline-block;
-            background-image: url(../img/sp_main_icons.png);
-            background-size: 440px 410px;
-            background-position: -270px 0;
-            background-repeat: no-repeat;
+            @include icon(148px, 53px, 440px 410px,-270px 0);
             vertical-align: top;
         }
         .light_mode_btn:hover {
             background-position: 0px -212px;
         }
         .page_up_btn {
-            width: 51px;
-            height: 51px;
-            display: inline-block;
-            background-image: url(../img/sp_main_icons.png);
-            background-size: 440px 410px;
-            background-position: -202px -212px;
-            background-repeat: no-repeat;
+            @include icon(51px, 51px, 440px 410px,-202px -212px);
             vertical-align: top;
         }
         .page_up_btn:hover {
@@ -1634,13 +1448,7 @@ header {
             }
             .link_all::after {
                 content: '';
-                width: 8px;
-                height: 12px;
-                display: inline-block;
-                background-image: url(../img/sp_main_icons.png);
-                background-position: -408px -110px;
-                background-size: 440px 410px;
-                background-repeat: no-repeat;
+                @include icon(8px, 12px, 440px 410px,-408px -110px);
                 margin-left: 10px;
                 vertical-align: -2px;
             }

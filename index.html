@@ -78,7 +78,7 @@
                                 <button id="arrow_btn">
                                     <span class="arrow_icon"></span>
                                 </button>
-                                <button id="search_btn">
+                                <button type="submit" id="search_btn">
                                     <span class="search_icon"></span>
                                 </button>
                             </div>
@@ -332,6 +332,7 @@
 <main class="main_container">
     <!--left side-->
     <section class="main_left_container">
+        <h2>좌측 컨테이너</h2>
         <div class="ad_container">
             <a href="http://edu.brain-study.co.kr/edu/Rental_wcomms/on_land/500p-01-15.html?code=rental_O_naverbrand_500P_B1" target="_blank" class="ad_content">
                 <img src="img/ad/01.png" alt="뇌새김 광고" width="750" height="135">
@@ -368,9 +369,10 @@
                 </div>
             </div>
             <div class="news_stand_view_container">
-                <button class="prev_btn"></button>
-                <button class="next_btn"></button>
-                <ul class="thumb_box_container">
+                <button class="prev_btn" id="prev_news"></button>
+                <button class="next_btn" id="next_news"></button>
+                <div class="container_list">
+                    <ul class="thumb_box_container">
                     <li class="thumb_box">
                         <img src="img/thumb_01/01.png" alt="데일리안" class="thumb_img">
                         <div class="popup_box">
@@ -635,7 +637,540 @@
                             </a>
                         </div>
                     </li>
-                </ul>
+                    </ul>
+                    <ul class="thumb_box_container">
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/01.png" alt="프레시안" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/02.png" alt="뉴스시스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/03.png" alt="국민일보" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/04.png" alt="미디어 오늘" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/05.png" alt="매일경제" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/06.png" alt="이데일리" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/07.png" alt="동아일보" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/08.png" alt="세계일보" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/09.png" alt="디지털타임스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/10.png" alt="전자신문" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/11.png" alt="YTN" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/12.png" alt="SBS" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/13.png" alt="스포탈코리아" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/14.png" alt="일간스포츠" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/15.png" alt="kbsworld" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/16.png" alt="코리아중앙데일리" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/17.png" alt="조선비즈" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/18.png" alt="인천일보" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/19.png" alt="연합뉴스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/20.png" alt="위키리크스한국" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/21.png" alt="미주한국일보" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/22.png" alt="뉴스타파" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/23.png" alt="그린포스트코리아" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_02/24.png" alt="비즈니스포스트" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    </ul>
+                    <ul class="thumb_box_container">
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/01.png" alt="연합인포맥스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/02.png" alt="헤럴드경제" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/03.png" alt="더코리아타임즈" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/04.png" alt="zd넷코리아" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/05.png" alt="마이데일리" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/06.png" alt="EBN" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/07.png" alt="스포탈코리아" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/08.png" alt="한국경제TV" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/09.png" alt="에이블뉴스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/10.png" alt="스포티비뉴스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/11.png" alt="데이터뉴스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/12.png" alt="미디어펜" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/13.png" alt="서울파이낸스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/14.png" alt="JTBC" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/15.png" alt="아시아투데이" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/16.png" alt="중부일보" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/17.png" alt="CNBNEWS" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/18.png" alt="독서신문" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/19.png" alt="스포츠한국" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/20.png" alt="매일노동뉴스" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/21.png" alt="게임동아" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/22.png" alt="투데이신문" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/23.png" alt="OSEN" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    <li class="thumb_box">
+                        <img src="img/thumb_03/24.png" alt="조선일보" class="thumb_img">
+                        <div class="popup_box">
+                            <a href="">
+                                구독
+                            </a>
+                            <a href="">
+                                기사보기
+                            </a>
+                        </div>
+                    </li>
+                    </ul>
+            </div>
             </div>
         </div>
         <div id="theme_contents_container">
@@ -765,8 +1300,8 @@
                 </div>
             </div>
         </div>
-        <div id="theme_contents_list">
-            <div class="theme_01">
+        <ul id="theme_contents_list">
+            <li class="theme_container" style="display: none;">
                 <div class="top_story">
                     <div class="top_story_inner">
                         <a class="top_story_thumb" href="https://tv.naver.com/v/17077036" target="_blank">
@@ -1640,9 +2175,883 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-        </div>
+            </li>
+            <li class="theme_container">
+                <div class="top_story">
+                    <div class="top_story_inner">
+                        <a class="top_story_thumb" href="https://tv.naver.com/v/17077036" target="_blank">
+                            <img src="img/theme_01//top_story/cropimg_01.png" width="364" height="180" alt="IZ*ONE (아이즈원) 'Panorama' MV" class="focusing">
+                        </a>
+                        <a class="top_story_info" href="https://tv.naver.com/v/17077036" target="_blank">
+                            <em>IZ*ONE</em><br>
+                            <strong class="info_title">IZ*ONE (아이즈원) 'Panorama' MV</strong><br>
+                            <span>Stone Music Entertainment</span>
+                        </a>
+                    </div>
+                    <div class="top_story_inner">
+                        <ul class="theme_list">
+                            <li class="theme_item">
+                                <a href="https://www.vlive.tv/video/226895" class="theme_thumb" target="_blank">
+                                    <img src="img/theme_01/top_story/cropimg_02.jpg" alt="찬이의 방" width="98" height="98">
+                                </a>
+                                <a href="https://www.vlive.tv/video/226895" class="theme_info" target="_blank">
+                                    <em>Stray Kids</em><br>
+                                    <strong>찬이의 "방" 🐺 Ep. 83</strong><br>
+                                    <p>V LIVE</p>
+                                </a>
+                            </li>
+                            <li class="theme_item">
+                                <a href="https://www.vlive.tv/post/0-20266898" class="theme_thumb" target="_blank">
+                                    <img src="img/theme_01/top_story/cropimg_03.jpg" alt="Stray Kids" width="98" height="98">
+                                </a>
+                                <a href="https://www.vlive.tv/post/0-20266898" class="theme_info" target="_blank">
+                                    <em>Stray Kids</em><br>
+                                    <strong>'From Home (Rearranged Ver.)'<br> Official Video </strong><br>
+                                    <p>V LIVE</p>
+                                </a>
+                            </li>
+                            <li class="theme_item">
+                                <a href="https://serieson.naver.com/broadcasting/detail.nhn?viewSeq=428148" class="theme_thumb" target="_blank">
+                                    <img src="img/theme_01/top_story/cropImg_04.jpeg" alt="네이버 시리즈온" width="98" height="98">
+                                </a>
+                                <a href="https://serieson.naver.com/broadcasting/detail.nhn?viewSeq=428148" class="theme_info" target="_blank">
+                                    <em>네이버 시리즈온</em><br>
+                                    <strong>그들에게 인간은<br>그저 사냥감일 뿐이다.</strong><br>
+                                    <p>V LIVE</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="theme_link_container">
+                    <a class="link_enter" href="">연예 홈</a>
+                    <ul class="ent_list_container">
+                        <li class="service_item">
+                            <a href="">네이버 TV홈</a>
+                        </li>
+                        <li class="service_item">
+                            <a href="">V Live</a>
+                        </li>
+                        <li class="service_item">
+                            <a href="">Top100</a>
+                        </li>
+                        <li class="service_item">
+                            <a href="">시리즈온</a>
+                        </li>
+                        <li class="service_item">
+                            <a href="">라이브 일정</a>
+                        </li>
+                        <li class="service_item">
+                            <a href="">Vibe</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="group_theme">
+                    <div class="media_view_container">
+                        <a class="media_area" href="https://tv.naver.com/v/18910873" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/01.jpg" alt="[선공개] '집 나간 3☆의 딸'에서 배우로? 미스터리한(?) 이직 끝판왕 진기주 자기님☆" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    05:02
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [선공개] '집 나간 3☆의 딸'에서 배우로? 미스터리한(?) 이직 끝판왕 진기주 자기님☆
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18903926" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/02.jpg" alt="[선공개] 김동현이 꼽은 🥊연예계 싸움 서열🥊?!, MBC 210310 방송" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    02:46
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [선공개] 김동현이 꼽은 🥊연예계 싸움 서열🥊?!, MBC 210310 방송
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18814202" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/03.png" alt="전설의 그 이름, 김연두 지현호라고 들어봤나?! [오늘부터 계약연애] 연두&현호 라떼인터뷰" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    10:24
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    전설의 그 이름, 김연두 지현호라고 들어봤나?! [오늘부터 계약연애] 연두&현호 라떼인터뷰
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18890212" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/04.jpg" alt="원진아의 사과를 받아들인 로운 ＂선배, 키스해도 돼요?＂ | JTBC 210309 방송" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    03:58
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    원진아의 사과를 받아들인 로운 ＂선배, 키스해도 돼요?＂ | JTBC 210309 방송
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18795366" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/05.png" alt="우리 사귀는 거 믿게 해줄게 [오늘부터 계약연애] EP04 연애를 증명하는 방법" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    12:09
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    우리 사귀는 거 믿게 해줄게 [오늘부터 계약연애] EP04 연애를 증명하는 방법
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18677800" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/06.png" alt="전여친에게 새 남친이 생겼다 [오늘부터 계약연애] EP02 계약 연애도 결국은 연애다" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    13:07
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    전여친에게 새 남친이 생겼다 [오늘부터 계약연애] EP02 계약 연애도 결국은 연애다
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18753782" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/07.jpg" alt="[와썹맨X] 한겨울에 즐기는 물놀이? 제대로 물 만난 얼간크루 진정한 물아일체ㅣEP.6" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    16:36
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [와썹맨X] 한겨울에 즐기는 물놀이? 제대로 물 만난 얼간크루 진정한 물아일체ㅣEP.6
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18519353" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/08.jpg" alt="[와썹맨X] 한우 100만원 먹방 걸어봅니다! 이 구역 최고의 빙(氷)신은?😂ㅣEP.4" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    17:18
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [와썹맨X] 한우 100만원 먹방 걸어봅니다! 이 구역 최고의 빙(氷)신은?😂ㅣEP.4    
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18645884" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/09.jpg" alt="[와썹맨X] 자비란 없습니다...평균나이 40세 ★막장 눈싸움 레전드★ 과연 승자는???ㅣEP.5" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    16:06
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [와썹맨X] 자비란 없습니다...평균나이 40세 ★막장 눈싸움 레전드★ 과연 승자는???ㅣEP.5
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!--뮤직 급상승 차트-->
+                <div class="group_theme">
+                   <div class="theme_title">
+                    <a href="https://vibe.naver.com/chart/domestic" class="title" target="_blank">
+                        뮤직 급상승 차트
+                    </a>
+                    <p>
+                        오후 9시 업데이트
+                    </p>
+                   </div>
+                   <div class="chart_view_container">
+                    <ol class="chart_view">
+                        <li class="chart_area">
+                            <em class="chart_rank">1</em>
+                            <a href="https://vibe.naver.com/album/5318254" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/01.jpg" alt="별빛 같은 나의 사랑아" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/45076566" class="title chart_info_title">
+                                    별빛 같은 나의 사랑아
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/451341" target="_blank">임영웅</a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5318254" target="_blank">
+                                            별빛 같은 나의 사랑아
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/45076566" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/45076566" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">2</em>
+                            <a href="https://vibe.naver.com/album/5338058" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/02.jpg" alt="On The Ground" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/45294296" class="title chart_info_title" target="_blank">
+                                    On The Ground
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/500567" target="_blank">
+                                            로제 (ROSÉ)
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5338058" target="_blank">
+                                            R
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/45294296" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/45294296" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">3</em>
+                            <a href="https://vibe.naver.com/album/5244647" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/03.jpg" alt="꼬리 (TAIL)" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/44440502" class="title chart_info_title" target="_blank">
+                                    꼬리 (TAIL)
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/34647" target="_blank">
+                                            선미
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5244647" target="_blank">
+                                            꼬리 (TAIL)
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/44440502" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/44440502" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">4</em>
+                            <a href="https://vibe.naver.com/album/5324624" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/04.jpg" alt="Full Bloom (만개)" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/45151125" class="title chart_info_title" target="_blank">
+                                    안녕 내 전부였던 너
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/313232" target="_blank">
+                                            펀치 (Punch)
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5324624" target="_blank">
+                                            Full Bloom (만개)
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/45151125" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/45151125" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">5</em>
+                            <a href="https://vibe.naver.com/album/5291293" class="chart_thumb">
+                                <img src="img/theme_01/chart/05.jpg" alt="ISLAND" class="album_img" width="48" height="48" target="_blank">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/44854749" class="title chart_info_title" target="_blank">
+                                    멜로디
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/2371236" target="_blank">
+                                            ASH ISLAND
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5291293" target="_blank">
+                                            ISLAND
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/44854749" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/44854749" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                    <ol class="chart_view">
+                        <li class="chart_area">
+                            <em class="chart_rank">6</em>
+                            <a href="https://vibe.naver.com/album/5279090" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/06.jpg" alt="PIECES by RAIN" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/44746693" class="title chart_info_title" target="_blank">
+                                    MAGNETIC (Feat. 잭슨)
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/7798" target="_blank">
+                                            비
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5279090" target="_blank">
+                                            PIECES by RAIN
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/44746693" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/44746693" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">7</em>
+                            <a href="https://vibe.naver.com/album/5228502" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/07.jpg" alt="tellusboutyourself Remixes" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/44281716" class="title chart_info_title" target="_blank">
+                                    “HOMESWEETHOME” (윤석철 Remix)
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/234253" target="_blank">
+                                            백예린
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5228502" target="_blank">
+                                            tellusboutyourself Remixes
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/44281716" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/44281716" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">8</em>
+                            <a href="https://vibe.naver.com/album/5243522" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/08.jpg" alt="Day By Day" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/44432370" class="title chart_info_title" target="_blank">
+                                    Alibis
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/37371" target="_blank">
+                                            양준일
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5243522" target="_blank">
+                                            Day By Day
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/44432370" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/44432370" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">9</em>
+                            <a href="https://vibe.naver.com/album/5339856" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/09.jpg" alt="Rewind : Blossom Side A" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/45304668" class="title chart_info_title" target="_blank">
+                                    인형
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/208489" target="_blank">
+                                            백현
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5339856" target="_blank">
+                                            Rewind : Blossom Side A
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/45304668" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/45304668" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="chart_area">
+                            <em class="chart_rank">10</em>
+                            <a href="https://vibe.naver.com/album/5253279" class="chart_thumb" target="_blank">
+                                <img src="img/theme_01/chart/10.jpg" alt="Bucket List" class="album_img" width="48" height="48">
+                            </a>
+                            <div class="chart_info">
+                                <a href="https://vibe.naver.com/track/44509396" class="title chart_info_title" target="_blank">
+                                    Frank Ocean (Feat. SOLE) (Prod. Cosmic Boy)
+                                </a>
+                                <div class="chart_dsc">
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/artist/2988467" target="_blank">
+                                            서동현
+                                        </a>
+                                    </span>
+                                    <span class="dsc">
+                                        <a href="https://vibe.naver.com/album/5253279" target="_blank">
+                                            Bucket List
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="chart_link">
+                                <a href="https://vibe.naver.com/track/44509396" class="link_play" target="_blank">
+                                    <span class="blind">재생</span>
+                                </a>
+                                <a href="https://vibe.naver.com/track/44509396" class="link_lyrics" target="_blank">
+                                    <span>가사</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                   </div>
+                </div>
+                <div class="group_theme">
+                    <div class="media_view_container">
+                        <a class="media_area" href="https://tv.naver.com/v/18910873" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/01.jpg" alt="[선공개] '집 나간 3☆의 딸'에서 배우로? 미스터리한(?) 이직 끝판왕 진기주 자기님☆" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    05:02
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [선공개] '집 나간 3☆의 딸'에서 배우로? 미스터리한(?) 이직 끝판왕 진기주 자기님☆
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18903926" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/02.jpg" alt="[선공개] 김동현이 꼽은 🥊연예계 싸움 서열🥊?!, MBC 210310 방송" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    02:46
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [선공개] 김동현이 꼽은 🥊연예계 싸움 서열🥊?!, MBC 210310 방송
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18814202" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/03.png" alt="전설의 그 이름, 김연두 지현호라고 들어봤나?! [오늘부터 계약연애] 연두&현호 라떼인터뷰" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    10:24
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    전설의 그 이름, 김연두 지현호라고 들어봤나?! [오늘부터 계약연애] 연두&현호 라떼인터뷰
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18890212" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/04.jpg" alt="원진아의 사과를 받아들인 로운 ＂선배, 키스해도 돼요?＂ | JTBC 210309 방송" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    03:58
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    원진아의 사과를 받아들인 로운 ＂선배, 키스해도 돼요?＂ | JTBC 210309 방송
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18795366" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/05.png" alt="우리 사귀는 거 믿게 해줄게 [오늘부터 계약연애] EP04 연애를 증명하는 방법" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    12:09
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    우리 사귀는 거 믿게 해줄게 [오늘부터 계약연애] EP04 연애를 증명하는 방법
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18677800" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/06.png" alt="전여친에게 새 남친이 생겼다 [오늘부터 계약연애] EP02 계약 연애도 결국은 연애다" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    13:07
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    전여친에게 새 남친이 생겼다 [오늘부터 계약연애] EP02 계약 연애도 결국은 연애다
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18753782" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/07.jpg" alt="[와썹맨X] 한겨울에 즐기는 물놀이? 제대로 물 만난 얼간크루 진정한 물아일체ㅣEP.6" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    16:36
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [와썹맨X] 한겨울에 즐기는 물놀이? 제대로 물 만난 얼간크루 진정한 물아일체ㅣEP.6
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18519353" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/08.jpg" alt="[와썹맨X] 한우 100만원 먹방 걸어봅니다! 이 구역 최고의 빙(氷)신은?😂ㅣEP.4 " width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    17:18
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [와썹맨X] 한우 100만원 먹방 걸어봅니다! 이 구역 최고의 빙(氷)신은?😂ㅣEP.4    
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                        <a class="media_area" href="https://tv.naver.com/v/18645884" target="_blank">
+                            <div class="media_thumb">
+                                <img src="img/theme_01/media_01/09.jpg" alt="[와썹맨X] 자비란 없습니다...평균나이 40세 ★막장 눈싸움 레전드★ 과연 승자는???ㅣEP.5" width="232" height="130">
+                                <i class="pm_ico_play">
+                                    <span>재생</span>
+                                </i>
+                                <span class="theme_runtime">
+                                    16:06
+                                </span>
+                            </div>
+                            <div class="media_info">
+                                <em>웹드라마</em>
+                                <strong class="title media_title">
+                                    [와썹맨X] 자비란 없습니다...평균나이 40세 ★막장 눈싸움 레전드★ 과연 승자는???ㅣEP.5
+                                </strong>
+                                <p>유 퀴즈 온 더 블럭 <span class="date">2시간 전</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="group_theme">
+                    <div class="theme_title">
+                        <a href="" class="title">
+                            VIBE MAG
+                        </a>
+                    </div>
+                    <div class="poster_view_container">
+                        <button class="prev_btn"></button>
+                        <button class="next_btn"></button>
+                        <div class="poster_thumb_wrap">
+                            <ul class="poster_thumb_container">
+                                <li class="poster_thumb">
+                                    <a href="https://vibe.naver.com/magazines/44803" target="_blank">
+                                        <img src="img/theme_01/poster/01.jpg" alt="2021 그래미의 순간들" width="130" height="130">
+                                        <div class="poster_info">
+                                            <strong class="title">
+                                                2021 그래미의 순간들
+                                            </strong>
+                                            <span class="dsc">
+                                                2021.03.18
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="poster_thumb">
+                                    <a href="https://vibe.naver.com/magazines/44750" target="_blank">
+                                        <img src="img/theme_01/poster/02.jpg" alt="깊은 향, R-O-S-E" width="130" height="130">
+                                        <div class="poster_info">
+                                            <strong class="title">
+                                                깊은 향, R-O-S-E
+                                            </strong>
+                                            <span class="dsc">
+                                                2021.03.17
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="poster_thumb">
+                                    <a href="https://vibe.naver.com/magazines/44103" target="_blank">
+                                        <img src="img/theme_01/poster/03.jpg" alt="이주의 디깅 #99 릴보이" width="130" height="130">
+                                        <div class="poster_info">
+                                            <strong class="title">
+                                                이주의 디깅 #99 릴보이
+                                            </strong>
+                                            <span class="dsc">
+                                                2021.03.16
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="poster_thumb">
+                                    <a href="https://vibe.naver.com/magazines/44506" target="_blank">
+                                        <img src="img/theme_01/poster/04.jpg" alt="New Release #33 :  로제, 이매진 드래곤스" width="130" height="130">
+                                        <div class="poster_info">
+                                            <strong class="title">
+                                                New Release #33 :  로제, 이매진 드래곤스
+                                            </strong>
+                                            <span class="dsc">
+                                                2021.03.15
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="poster_thumb">
+                                    <a href="https://vibe.naver.com/magazines/44600" target="_blank">
+                                        <img src="img/theme_01/poster/05.png" alt="3월의 느낌, 당신의 느낌은 어땠나요?" width="130" height="130">
+                                        <div class="poster_info">
+                                            <strong class="title">
+                                                3월의 느낌, 당신의 느낌은 어땠나요?
+                                            </strong>
+                                            <span class="dsc">
+                                                2021.03.15
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="poster_thumb_container">
+                            <li class="poster_thumb">
+                                <a href="https://vibe.naver.com/magazines/44803" target="_blank">
+                                    <img src="img/theme_01/poster/06.jpg" alt="깊은 향, R-O-S-E" width="130" height="130">
+                                    <div class="poster_info">
+                                        <strong class="title">
+                                            깊은 향, R-O-S-E
+                                        </strong>
+                                        <span class="dsc">
+                                            2021.03.17
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="poster_thumb">
+                                <a href="">
+                                    <img src="img/theme_01/poster/07.gif" alt="깊은 향, R-O-S-E" width="130" height="130">
+                                    <div class="poster_info">
+                                        <strong class="title">
+                                            깊은 향, R-O-S-E
+                                        </strong>
+                                        <span class="dsc">
+                                            2021.03.17
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="poster_thumb">
+                                <a href="">
+                                    <img src="img/theme_01/poster/08.jpg" alt="깊은 향, R-O-S-E" width="130" height="130">
+                                    <div class="poster_info">
+                                        <strong class="title">
+                                            깊은 향, R-O-S-E
+                                        </strong>
+                                        <span class="dsc">
+                                            2021.03.17
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="poster_thumb">
+                                <a href="">
+                                    <img src="img/theme_01/poster/09.jpg" alt="깊은 향, R-O-S-E" width="130" height="130">
+                                    <div class="poster_info">
+                                        <strong class="title">
+                                            깊은 향, R-O-S-E
+                                        </strong>
+                                        <span class="dsc">
+                                            2021.03.17
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="poster_thumb">
+                                <a href="">
+                                    <img src="img/theme_01/poster/10.jpg" alt="깊은 향, R-O-S-E" width="130" height="130">
+                                    <div class="poster_info">
+                                        <strong class="title">
+                                            깊은 향, R-O-S-E
+                                        </strong>
+                                        <span class="dsc">
+                                            2021.03.17
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>     
+        </ul>
 
     </section>
 
@@ -1670,14 +3079,10 @@
             </div>
         </div>
         <div class="time_square">
-            <a href="" class="card_news">
+            <a href="http://ncov.mohw.go.kr/" class="card_news">
                 <span class="news_badge">이슈</span>
                 <span class="news">코로나바이러스감염증19 현황</span>
             </a>
-            <div class="btn_wrap">
-                <button type="button" class="btn_prev"></button>
-                <button type="button" class="btn_next"></button>
-            </div>
         </div>
         <div class="brand_container">
             <a href="" class="img_link">
@@ -1959,16 +3364,17 @@
                         <strong class="title">반갑다! 쇼핑뉴스</strong>
                         <div class="shop_control">
                             <div class="num_box">
-                                <em class="current_num">1</em>
-                                <span>/ 4</span>
+                                <em class="current_num" id="category_num">1</em>
+                                <span>/ 3</span>
                             </div>
                             <div class="btn_box">
-                                <button class="btn_prev"></button>
-                                <button class="btn_next"></button>
+                                <button class="btn_prev" id="prev_category"></button>
+                                <button class="btn_next" id="next_category"></button>
                             </div>
                         </div>
                     </div>
-                    <ul class="list_event">
+                    <div>
+                        <ul class="list_event">
                         <li class="event_item">
                             <a href="https://smartstore.naver.com/ssfishmarket/products/5288357310?NaPm=ct%3Dkmj0tirk%7Cci%3Db96bbbdacf0058fc17dbeaacbf08c44cf0161a30%7Ctr%3Dsbtpb%7Csn%3D2007298%7Chk%3D6c5c44b1ffcb6aedc910fe6e796315e3fd31da75" class="event_area" target="_blank">
                                 <em class="title">생생어시장</em>
@@ -1980,7 +3386,7 @@
                             <a href="https://shopping.naver.com/plan/details/68201" class="event_area" target="_blank">
                                 <em class="title">다채몰</em>
                                 <span class="dsc">힘내라 대구</span>
-                                <span class="dsc">소상공인 힘내라</span>
+                                <span class="dsc">듣상공인 힘내라</span>
                             </a>
                         </li>
                         <li class="event_item">
@@ -2018,7 +3424,110 @@
                                 <span class="dsc">최대 69% 이벤트</span>
                             </a>
                         </li>
-                    </ul>
+                        </ul>
+                        <ul class="list_event">
+                        <li class="event_item">
+                            <a href="https://shopping.naver.com/plan/details/260578?NaPm=ct%3Dkmtbew48%7Cci%3Da1c3925675030d2cd9773120ade614ebde9cf755%7Ctr%3Dsbtpb%7Csn%3D95694%7Chk%3D5110776346daf2689689064513194754f7a70e4a" class="event_area" target="_blank">
+                                <em class="title">경북고향장터</em>
+                                <span class="dsc">경북 우수제품</span>
+                                <span class="dsc">한자리에</span>
+                            </a>
+                        </li>
+                        <li class="event_item">
+                            <a href="https://shopping.naver.com/plan/details/68198" class="event_area" target="_blank">
+                                <em class="title">서울샵</em>
+                                <span class="dsc">중소기업 우수</span>
+                                <span class="dsc">추천상품 모음전</span>
+                            </a>
+                        </li>
+                        <li class="event_item">
+                            <a href="https://shopping.naver.com/plan/details/492996?NaPm=ct%3Dkmtbg2k0%7Cci%3D3f58c996b3665ff336750fd93fc310f7b651ab2e%7Ctr%3Dsbtpb%7Csn%3D95694%7Chk%3D0b4b748c8122125e5bb887a40e6f574097bf7390" class="event_area" target="_blank">
+                                <em class="title">농림부 x aT</em>
+                                <span class="dsc">찬들마루N</span>
+                                <span class="dsc">맛있는 식탁</span>
+                            </a>
+                        </li>
+                        <li class="event_item">
+                            <a href="https://smartstore.naver.com/cisfe/products/5443721532?NaPm=ct%3Dkmtbisjs%7Cci%3D001cd8a1621a3a3ffd1c619533c95de284d8180c%7Ctr%3Dsbtpb%7Csn%3D3342928%7Chk%3D621f48594d5e56a93b4f032d58598ada7e9d7efe" class="event_area" target="_blank">
+                                <em class="title">시스페</em>
+                                <span class="dsc">10% 할인 진행중!</span>
+                                <span class="dsc">인테리어홈바의자</span>
+                            </a>
+                        </li>
+                        <li class="event_item">
+                            <a href="https://smartstore.naver.com/awesomebridge/products/5101031147?NaPm=ct%3Dkmtbjggw%7Cci%3Dbf41cbab7501a55d988e0a46f03d090b7f835279%7Ctr%3Dsbtpb%7Csn%3D453873%7Chk%3D9f519b2326673321c9abda7bb8ff37b98441e644" class="event_area" target="_blank">
+                                <em class="title">어썸브릿지</em>
+                                <span class="dsc">감성캠핑테이블</span>
+                                <span class="dsc">감성캠핑테이블</span>
+                            </a>
+                        </li>
+                        <li class="event_item">
+                            <a href="https://smartstore.naver.com/preasentia01/products/5303965471?NaPm=ct%3Dkmtbk9sg%7Cci%3D0f6d0b1643a381de99eab94e9a7c781751c5fd30%7Ctr%3Dsbtpb%7Csn%3D1426186%7Chk%3D54a8b04c0ddcf1c08fafb2a7987bfeccf30f735e" class="event_area" target="_blank">
+                                <em class="title">프레센티아</em>
+                                <span class="dsc">신학기할인이벤트</span>
+                                <span class="dsc">2+1! 47%할인</span>
+                            </a>
+                        </li>
+                        <li class="event_item">
+                            <a href="http://www.anais.co.kr/?da_ref=Yz1lZ25BMmw=&ref=Navernews&NaPm=ct%3Dkmtbkpzs%7Cci%3Dbd65458ff49e4e7fbdb8ca09946b00b14b2e4403%7Ctr%3Dsbtpb%7Csn%3D125028%7Chk%3D95e52fedaececb0b9882df123d45f9e7b57400a0" class="event_area" target="_blank">
+                                <em class="title">아나이스</em>
+                                <span class="dsc">모두가 탐내는옷~</span>
+                                <span class="dsc">매일매일 신상5%</span>
+                            </a>
+                        </li>
+                        </ul>
+                        <ul class="list_event">
+                            <li class="event_item">
+                                <a href="https://smartstore.naver.com/bomcosmetic/products/5415275142?NaPm=ct%3Dkmtbx1o0%7Cci%3D2e8de66b4d9a7e39def416804614b3e4b31b4bdd%7Ctr%3Dsbtpb%7Csn%3D421620%7Chk%3D7349ae147aa61d863154b74aa7d0444c2b705783" class="event_area" target="_blank">
+                                    <em class="title">비오엠코스메틱</em>
+                                    <span class="dsc">비오엠아이팔레트</span>
+                                    <span class="dsc">47% 할인 !</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://smartstore.naver.com/vete1995?NaPm=ct%3Dkmtbzvio%7Cci%3D186783f1e1f8f092db743e6a4197ce5668cc36dd%7Ctr%3Dsbtpb%7Csn%3D3122439%7Chk%3D2c16187176630c5575612c8efe99e1ec4300347e" class="event_area" target="_blank">
+                                    <em class="title">베테</em>
+                                    <span class="dsc">봄맞이 여성의류</span>
+                                    <span class="dsc">최대 38%↓</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://smartstore.naver.com/mangine/products/5451332154?NaPm=ct%3Dkmtc2bhc%7Cci%3Dc1fb202b400926b20f5d16ab0e8499de6b659fec%7Ctr%3Dsbtpb%7Csn%3D2810868%7Chk%3Dd7bdd1c2bddb7e58b034ef22e3d6ed23e063ec28" class="event_area" target="_blank">
+                                    <em class="title">망이네</em>
+                                    <span class="dsc">프라이팬 2종</span>
+                                    <span class="dsc">세트 15% ↓</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://shopping.naver.com/plan/details/454955?NaPm=ct%3Dkmtc2q54%7Cci%3D47793e675251bad8f16c5d0f33575e1812bee2f1%7Ctr%3Dsbtpb%7Csn%3D95694%7Chk%3D665f34374a341c0ac13c03984a398c7e06fdc8dd" class="event_area" target="_blank">
+                                    <em class="title">농식품상생협력</em>
+                                    <span class="dsc">우리입맛 딱!</span>
+                                    <span class="dsc">농축산물 추천</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://adcr.shopping.naver.com/adcr.nhn?x=jI57a5OOKBssk5uifwv%2BJf%2F%2F%2Fw%3D%3Ds9QUonJZjLQmZWSg%2B34FtLF6JmSahbm%2BaqjFB7DyZoquVREFiAy2nCth9LAB54T5Az33gmRWR2zaJldDr5%2Fuw03VVvVfMqaMPoh1quxqhy3QJ88kG9uW1aT9qWl%2BcGqKiD%2B0%2BwKueQVJOCux0BqlftCAdzZIw1vDsupvczSD1zAab4KVQ3aDXlVbUibpRiGdQlKb93sy5hkwPFDfnEmtGqYt3q%2Fath6SAs3kZydCcW3f44thkqE%2BBRcHDBAudmn%2BjKQ2qgiydh%2BG%2BMiBOJ4EhRqXIJVZS8yFTh69ssQs4dW9OU8a76z3dCvm9W5%2F%2FjBNRVWIXFZLigvlzH1qfCizHu%2BNSHemF%2BXyiAKqS89KuogXp2oh%2FHW%2Bbd290r0rBdKleDNQWlBdPlDRO5NfyWcGJsdMh1Mii1FlJa8RgYEdVHYE%3D&y=q6bwznybKdhxxfQP%2FBKQhP%2F%2F%2Fw%3D%3Dsfu%2FtfZ7ZTA1V4a0bati0cBDrbsFPbz%2Bl0EVcCBUp7XSTbVp6RvndgnFjUcLgCNBlHPfvp8xcAKpkjTuSyl6nNpZHPLJmWUVMdd34BR%2Bx7UbCrg0xy%2Bv0JPhsCnMDQeiCPr1hIBuOA64WqvbKfs6WV84cZsQOe%2FqIbpt7MPVyWcoqXe%2BtgdzsKPxiMGZFHX%2FSh6dTNQB%2B55mOQJHLZRwBAN0jmvtVMfBKrdPHWV%2FwyysGZT5zi21mMnYE3%2FBACexGvyEdOUsq7M5BgYg9YH%2B8gP%2B2Jp8nfCXDvpOK5g1s2opqohczsr74dyZLw7CeRfmKg9qr1AUzULL57CLOmdsuUwtxBVXzxkdFxcZMjzr8v3z0NILDiCURfqLkQmhRJpiHXDrTgB1heQXrIDrkNj2vumdjfVIRBOofLlbw4bnU2SuS8X5Aa7vPqcHb6ER%2BvDZoyhwwAi%2F3MmgxdUenO3t5cD%2FH9t%2FmvSbIa1kIcqfzyeEX3GiasZX7qRGbbRnYo%2FdcjUO4A08CC5Rny6tUXFPirFRFg7JqqoqbjSGjSfIDsZKL30E%2Fj5djOK%2Fwzk2PSk844vTeUSAiYLzBhVBGebVh%2BP0a3m%2FLDhsGJr2IqLx8ZB401xG6EVvUk2wYQEiZ6Sm1YK6jDcrYVP9qvI9ff7Bmew%3D%3D" class="event_area" target="_blank">
+                                    <em class="title">퍼플리아</em>
+                                    <span class="dsc">봄옷 지금 주문해</span>
+                                    <span class="dsc">신상 10% 세일중~</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="http://www.pinkelephant.co.kr/?da_ref=Yz1RZzVJSDk=&NaPm=ct%3Dkmtc485k%7Cci%3D2b2495fb4949d3bbd120e7de5f8ed0cf17e182ef%7Ctr%3Dsbtpb%7Csn%3D21719%7Chk%3Dacc2678bdeb6a3ef5056abd8274e196044ba4fa2" class="event_area" target="_blank">
+                                    <em class="title">분홍코끼리</em>
+                                    <span class="dsc">설레는 봄신상</span>
+                                    <span class="dsc">매일 10% SALE</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://smartstore.naver.com/consac/category/b598c429b33f49f4af5542e8ddc1211a?cp=1&NaPm=ct%3Dkmtc4trc%7Cci%3Daac13c8547022b51b343aac8e165dae34e18997e%7Ctr%3Dsbtpb%7Csn%3D192805%7Chk%3D4f606a15c4a528ad3fcefb64eb3ca62e7e2c4d63" class="event_area" target="_blank">
+                                    <em class="title">맥도도</em>
+                                    <span class="dsc">신상 고속 충전기</span>
+                                    <span class="dsc">최대 20% 할인!</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="group_plus">
                     <div class="shop_category">
@@ -2040,7 +3549,7 @@
                         </div>
                         <div class="category_control">
                             <div class="num_box">
-                                <em class="current_num">1</em>
+                                <em class="current_num" id="category_num">1</em>
                                 <span>/ 4</span>
                             </div>
                             <div class="btn_box">
@@ -2236,7 +3745,7 @@
     </div>
 </footer>
 
-<script src="jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="jquery/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="jquery/btn_effect.js"></script>
 <script type="text/javascript" src="jquery/weather_api.js"></script>
 <script type="text/javascript" src="jquery/update_news.js"></script>
