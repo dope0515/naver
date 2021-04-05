@@ -26,7 +26,7 @@
                 <a href="" id="logo"></a>
             </div>
             <div class="search_box">
-                <form action="">
+                <form action="https://search.naver.com/search.naver" method="GET">
                     <fieldset>
                         <legend class="blind">검색</legend>
                         <select name="where" id="where" title="검색 범위 선택" class="blind">
@@ -70,7 +70,7 @@
                             </optgroup>
                         </select>
                         <div class="search_area">
-                            <input type="text" class="input_text" maxlength="255" >
+                            <input type="text" class="input_text" maxlength="255" name="query">
                             <div class="btn_container">
                                 <button id="kbd_btn">
                                     <span class="kbd_icon"></span>
@@ -1192,8 +1192,8 @@
                 </div>
             </div>
             <div class="category_container">
-                <button type="button" class="prev_btn"></button>
-                <button type="button" class="next_btn"></button>
+                <button type="button" class="prev_btn" id="prev_theme"></button>
+                <button type="button" class="next_btn" id="next_theme"></button>
                 <div class="category_box_container">
                     <ul class="category_box">
                         <li class="category_item">
@@ -1301,7 +1301,7 @@
             </div>
         </div>
         <ul id="theme_contents_list">
-            <li class="theme_container" style="display: none;">
+            <li class="theme_container">
                 <div class="top_story">
                     <div class="top_story_inner">
                         <a class="top_story_thumb" href="https://tv.naver.com/v/17077036" target="_blank">
@@ -2035,8 +2035,8 @@
                         </a>
                     </div>
                     <div class="poster_view_container">
-                        <button class="prev_btn"></button>
-                        <button class="next_btn"></button>
+                        <button class="prev_btn" id="prev_poster"></button>
+                        <button class="next_btn" id="next_poster"></button>
                         <div class="poster_thumb_wrap">
                             <ul class="poster_thumb_container">
                                 <li class="poster_thumb">
@@ -2176,7 +2176,7 @@
                     </div>
                 </div>
             </li>
-            <li class="theme_container">
+            <li class="theme_container" style="display: none;">
                 <div class="top_story">
                     <div class="top_story_inner">
                         <a class="top_story_thumb" href="https://tv.naver.com/v/17077036" target="_blank">
@@ -3375,55 +3375,55 @@
                     </div>
                     <div>
                         <ul class="list_event">
-                        <li class="event_item">
-                            <a href="https://smartstore.naver.com/ssfishmarket/products/5288357310?NaPm=ct%3Dkmj0tirk%7Cci%3Db96bbbdacf0058fc17dbeaacbf08c44cf0161a30%7Ctr%3Dsbtpb%7Csn%3D2007298%7Chk%3D6c5c44b1ffcb6aedc910fe6e796315e3fd31da75" class="event_area" target="_blank">
-                                <em class="title">생생어시장</em>
-                                <span class="dsc">홈파티에 딱!</span>
-                                <span class="dsc">자숙랍스터 10%↓</span>
-                            </a>
-                        </li>
-                        <li class="event_item">
-                            <a href="https://shopping.naver.com/plan/details/68201" class="event_area" target="_blank">
-                                <em class="title">다채몰</em>
-                                <span class="dsc">힘내라 대구</span>
-                                <span class="dsc">듣상공인 힘내라</span>
-                            </a>
-                        </li>
-                        <li class="event_item">
-                            <a href="https://shopping.naver.com/plan/details/168705?NaPm=ct%3Dkmj0t43s%7Cci%3D443132b35b352636886e8818cdf4465595058858%7Ctr%3Dsbtpb%7Csn%3D95694%7Chk%3D758651dcba0e4e9bbc36cb16bd44a3475a504d39" class="event_area" target="_blank">
-                                <em class="title">울산상회</em>
-                                <span class="dsc">울산경제진흥원</span>
-                                <span class="dsc">중소기업상품추천</span>
-                            </a>
-                        </li>
-                        <li class="event_item">
-                            <a href="http://mackus.co.kr/goods/goods_view.php?goodsNo=1000000010&m_type=banner&m_code=2865&NaPm=ct%3Dkmj0t10o%7Cci%3Dd640adfa8b25f0cd6f82f53eb0fa804f3e3bf8aa%7Ctr%3Dsbtpb%7Csn%3D547977%7Chk%3Dec5f7261d09d5e549409ea002d56f1a3597195d5" class="event_area" target="_blank">
-                                <em class="title">맥커스</em>
-                                <span class="dsc">맥커스 반팔티</span>
-                                <span class="dsc">후기작성 EVENT</span>
-                            </a>
-                        </li>
-                        <li class="event_item">
-                            <a href="https://smartstore.naver.com/mani-farm/products/3597938771?NaPm=ct%3Dkmj0staw%7Cci%3Dbc1172c22c9456e01826440ff4388c424fe2fc5f%7Ctr%3Dsbtpb%7Csn%3D432118%7Chk%3D235e2acbea25ac495a9ad2dc726a4933423c6ab5" class="event_area" target="_blank">
-                                <em class="title">다이렉트스토어</em>
-                                <span class="dsc">찾았다!수납함</span>
-                                <span class="dsc">옷정리트레이1+1</span>
-                            </a>
-                        </li>
-                        <li class="event_item">
-                            <a href="https://smartstore.naver.com/sundayska/products/4241649006?NaPm=ct%3Dkmj0sn4o%7Cci%3Dd2d4798de037abfd98f4d357d009e2d1fd523b9e%7Ctr%3Dsbtpb%7Csn%3D432188%7Chk%3Df6a4d806a11a4fb8bff83034484f05d72f445692" class="event_area" target="_blank">
-                                <em class="title">선데이스카</em>
-                                <span class="dsc">수제각인명함지갑</span>
-                                <span class="dsc">굿퀄리티14%할인</span>
-                            </a>
-                        </li>
-                        <li class="event_item">
-                            <a href="https://www.snipershop.co.kr/index.html?cafe_mkt=ue_shopnews1&NaPm=ct%3Dkmj0s98o%7Cci%3D8fc39e4b02a78773b67fe657ba8104b6ea2652dc%7Ctr%3Dsbtpb%7Csn%3D155912%7Chk%3D8e82812b3261765dec59210b3a257aad05937499" class="event_area" target="_blank">
-                                <em class="title">스나이퍼샵</em>
-                                <span class="dsc">기간한정특가세일</span>
-                                <span class="dsc">최대 69% 이벤트</span>
-                            </a>
-                        </li>
+                            <li class="event_item">
+                                <a href="https://smartstore.naver.com/ssfishmarket/products/5288357310?NaPm=ct%3Dkmj0tirk%7Cci%3Db96bbbdacf0058fc17dbeaacbf08c44cf0161a30%7Ctr%3Dsbtpb%7Csn%3D2007298%7Chk%3D6c5c44b1ffcb6aedc910fe6e796315e3fd31da75" class="event_area" target="_blank">
+                                    <em class="title">생생어시장</em>
+                                    <span class="dsc">홈파티에 딱!</span>
+                                    <span class="dsc">자숙랍스터 10%↓</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://shopping.naver.com/plan/details/68201" class="event_area" target="_blank">
+                                    <em class="title">다채몰</em>
+                                    <span class="dsc">힘내라 대구</span>
+                                    <span class="dsc">듣상공인 힘내라</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://shopping.naver.com/plan/details/168705?NaPm=ct%3Dkmj0t43s%7Cci%3D443132b35b352636886e8818cdf4465595058858%7Ctr%3Dsbtpb%7Csn%3D95694%7Chk%3D758651dcba0e4e9bbc36cb16bd44a3475a504d39" class="event_area" target="_blank">
+                                    <em class="title">울산상회</em>
+                                    <span class="dsc">울산경제진흥원</span>
+                                    <span class="dsc">중소기업상품추천</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="http://mackus.co.kr/goods/goods_view.php?goodsNo=1000000010&m_type=banner&m_code=2865&NaPm=ct%3Dkmj0t10o%7Cci%3Dd640adfa8b25f0cd6f82f53eb0fa804f3e3bf8aa%7Ctr%3Dsbtpb%7Csn%3D547977%7Chk%3Dec5f7261d09d5e549409ea002d56f1a3597195d5" class="event_area" target="_blank">
+                                    <em class="title">맥커스</em>
+                                    <span class="dsc">맥커스 반팔티</span>
+                                    <span class="dsc">후기작성 EVENT</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://smartstore.naver.com/mani-farm/products/3597938771?NaPm=ct%3Dkmj0staw%7Cci%3Dbc1172c22c9456e01826440ff4388c424fe2fc5f%7Ctr%3Dsbtpb%7Csn%3D432118%7Chk%3D235e2acbea25ac495a9ad2dc726a4933423c6ab5" class="event_area" target="_blank">
+                                    <em class="title">다이렉트스토어</em>
+                                    <span class="dsc">찾았다!수납함</span>
+                                    <span class="dsc">옷정리트레이1+1</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://smartstore.naver.com/sundayska/products/4241649006?NaPm=ct%3Dkmj0sn4o%7Cci%3Dd2d4798de037abfd98f4d357d009e2d1fd523b9e%7Ctr%3Dsbtpb%7Csn%3D432188%7Chk%3Df6a4d806a11a4fb8bff83034484f05d72f445692" class="event_area" target="_blank">
+                                    <em class="title">선데이스카</em>
+                                    <span class="dsc">수제각인명함지갑</span>
+                                    <span class="dsc">굿퀄리티14%할인</span>
+                                </a>
+                            </li>
+                            <li class="event_item">
+                                <a href="https://www.snipershop.co.kr/index.html?cafe_mkt=ue_shopnews1&NaPm=ct%3Dkmj0s98o%7Cci%3D8fc39e4b02a78773b67fe657ba8104b6ea2652dc%7Ctr%3Dsbtpb%7Csn%3D155912%7Chk%3D8e82812b3261765dec59210b3a257aad05937499" class="event_area" target="_blank">
+                                    <em class="title">스나이퍼샵</em>
+                                    <span class="dsc">기간한정특가세일</span>
+                                    <span class="dsc">최대 69% 이벤트</span>
+                                </a>
+                            </li>
                         </ul>
                         <ul class="list_event">
                         <li class="event_item">
@@ -3750,5 +3750,6 @@
 <script type="text/javascript" src="jquery/weather_api.js"></script>
 <script type="text/javascript" src="jquery/update_news.js"></script>
 <script type="text/javascript" src="jquery/change_ad.js"></script>
+<script type="text/javascript" src="jquery/menu.js"></script>
 </body>
 </html>

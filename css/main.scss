@@ -354,7 +354,104 @@ header {
         }
     }
 }
-
+/*header_scroll*/
+.header_scroll {
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid $naver2;
+    animation-name: 'animate';
+    animation-duration: 0.5s;
+    animation-fill-mode: backwards;
+    .header_container {
+        width: 1130px;
+        height: 64px;
+        padding-top: 0;
+        .service_container {
+            display: none;
+        }
+        .search_container {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            position: relative;
+            
+            #logo_container {
+                width: 22px;
+                height: 22px;
+                display: inline-block;
+                position: static;
+                #logo{
+                    @include icon(100%, 100%, 440px 410px,-204px -386px);
+                }
+            }
+    
+            .search_box {
+                width: 740px;
+                height: 52px;
+                position: static;
+                border: none;
+                .blind {
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                .search_area {
+                    display: flex;
+                    justify-content: space-between;
+                    .input_text {
+                        width: 444px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding: 13px 15px;
+                        margin: 1px;
+                        outline: 0;
+                    }
+                    .btn_container {
+                        display: flex;
+                        align-items: center;
+                        #kbd_btn {
+                            margin-right: 12px;
+                            .kbd_icon {
+                                @include icon(20px, 12px, 440px 410px,-420px -248px);
+                                vertical-align: -4px;
+                            }
+                        }
+                        #arrow_btn {
+                            margin-right: 6px;
+                            .arrow_icon {
+                                @include icon(10px, 5px, 440px 410px,-404px -258px);
+                            }
+                        }
+                        #search_btn {
+                            width: 54px;
+                            height: 52px;
+                            background-color: #fff;
+                            .search_icon {
+                                @include icon(25px, 25px, 440px 410px,-52px -386px);
+                                vertical-align: -12px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    #gnb {
+        display: none;
+    }
+}
+@keyframes animate {
+    0% {
+        top: -50px;
+    }
+    100% {
+        top: 0;
+    }
+}
 /*main container*/
 .main_container{
     width: 1140px;
@@ -449,7 +546,7 @@ header {
                         margin: 0 9px;
                     }
                     .btn_set {
-                        @include icon(15px, 15px, 440px 410px,-440px -410px);
+                        @include icon(15px, 15px, 440px 410px,-420px -276px);
                         margin: 0 9px;
                         opacity: 0.7;
                     }
@@ -609,7 +706,7 @@ header {
                         top:0;
                         left: 0;
                         display: flex;
-    
+                        transition: all 0.5s;
                         .category_item {
                             width: 92.9px;
                             height: auto;
@@ -617,26 +714,24 @@ header {
                             justify-content: center;
                             align-items: center;
                             border-right: 1px solid #dae1e6;
+                            background-color: #fff;
                             .category_list_btn {
                                 width: 100%;
                                 height: 100%;
                                 font-weight: $bold;
+                                position: relative;
+                                z-index: 1;
                             }
+                            
                         }
                         .category_item:first-child {
                             background-color: #e65da0;
-                            box-shadow: 0 3px 6px 0 rgba(0,0,0,.16);
-                            border-radius: 1px;
-                            border-color: transparent;
                         }
                         .category_item:nth-child(8n) {
                             border-right: none;
                         }
                         .category_item:first-child button  {
                             color: #fff;
-                        }
-                        .category_item:focus{
-                            background-color: #2586ee;
                         }
                     }
                 }

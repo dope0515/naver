@@ -434,6 +434,168 @@ header .service_list_container .service_list_box .list_service:last-child {
   border-right: 1px solid #e4e8eb;
 }
 
+/*header_scroll*/
+.header_scroll {
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid #19ce60;
+  -webkit-animation-name: 'animate';
+          animation-name: 'animate';
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
+
+.header_scroll .header_container {
+  width: 1130px;
+  height: 64px;
+  padding-top: 0;
+}
+
+.header_scroll .header_container .service_container {
+  display: none;
+}
+
+.header_scroll .header_container .search_container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.header_scroll .header_container .search_container #logo_container {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: static;
+}
+
+.header_scroll .header_container .search_container #logo_container #logo {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background-image: url(../img/sp_main_icons.png);
+  background-size: 440px 410px;
+  background-position: -204px -386px;
+  background-repeat: no-repeat;
+}
+
+.header_scroll .header_container .search_container .search_box {
+  width: 740px;
+  height: 52px;
+  position: static;
+  border: none;
+}
+
+.header_scroll .header_container .search_container .search_box .blind {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .input_text {
+  width: 444px;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 13px 15px;
+  margin: 1px;
+  outline: 0;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .btn_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .btn_container #kbd_btn {
+  margin-right: 12px;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .btn_container #kbd_btn .kbd_icon {
+  width: 20px;
+  height: 12px;
+  display: inline-block;
+  background-image: url(../img/sp_main_icons.png);
+  background-size: 440px 410px;
+  background-position: -420px -248px;
+  background-repeat: no-repeat;
+  vertical-align: -4px;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .btn_container #arrow_btn {
+  margin-right: 6px;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .btn_container #arrow_btn .arrow_icon {
+  width: 10px;
+  height: 5px;
+  display: inline-block;
+  background-image: url(../img/sp_main_icons.png);
+  background-size: 440px 410px;
+  background-position: -404px -258px;
+  background-repeat: no-repeat;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .btn_container #search_btn {
+  width: 54px;
+  height: 52px;
+  background-color: #fff;
+}
+
+.header_scroll .header_container .search_container .search_box .search_area .btn_container #search_btn .search_icon {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-image: url(../img/sp_main_icons.png);
+  background-size: 440px 410px;
+  background-position: -52px -386px;
+  background-repeat: no-repeat;
+  vertical-align: -12px;
+}
+
+.header_scroll #gnb {
+  display: none;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes animate {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
 /*main container*/
 .main_container {
   width: 1140px;
@@ -599,7 +761,7 @@ header .service_list_container .service_list_box .list_service:last-child {
   display: inline-block;
   background-image: url(../img/sp_main_icons.png);
   background-size: 440px 410px;
-  background-position: -440px -410px;
+  background-position: -420px -276px;
   background-repeat: no-repeat;
   margin: 0 9px;
   opacity: 0.7;
@@ -852,6 +1014,8 @@ header .service_list_container .service_list_box .list_service:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .main_container .main_left_container #theme_contents_container .category_container .category_box_container .category_box .category_item {
@@ -867,20 +1031,19 @@ header .service_list_container .service_list_box .list_service:last-child {
       -ms-flex-align: center;
           align-items: center;
   border-right: 1px solid #dae1e6;
+  background-color: #fff;
 }
 
 .main_container .main_left_container #theme_contents_container .category_container .category_box_container .category_box .category_item .category_list_btn {
   width: 100%;
   height: 100%;
   font-weight: 700;
+  position: relative;
+  z-index: 1;
 }
 
 .main_container .main_left_container #theme_contents_container .category_container .category_box_container .category_box .category_item:first-child {
   background-color: #e65da0;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-  border-radius: 1px;
-  border-color: transparent;
 }
 
 .main_container .main_left_container #theme_contents_container .category_container .category_box_container .category_box .category_item:nth-child(8n) {
@@ -889,10 +1052,6 @@ header .service_list_container .service_list_box .list_service:last-child {
 
 .main_container .main_left_container #theme_contents_container .category_container .category_box_container .category_box .category_item:first-child button {
   color: #fff;
-}
-
-.main_container .main_left_container #theme_contents_container .category_container .category_box_container .category_box .category_item:focus {
-  background-color: #2586ee;
 }
 
 .main_container .main_left_container #theme_contents_list {

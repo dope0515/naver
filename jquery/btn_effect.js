@@ -4,13 +4,13 @@
         $( 'html, body' ).animate( { scrollTop : 0 },0 );
     });
     });
-
+    
 /*news List*/
     $(document).ready(function(){
-        var listState = 1;
-        var $nextNewsBtn = $('#next_news');
-        var $prevNewsBtn = $('#prev_news');
-        var $newsList = $('.thumb_box_container');
+        var listState = 1,
+            $nextNewsBtn = $('#next_news'),
+            $prevNewsBtn = $('#prev_news'),
+            $newsList = $('.thumb_box_container');
 
         $($nextNewsBtn).click(function(){
                 $newsList.css('display','none');
@@ -37,11 +37,11 @@
     });
     });
 /*shop List*/
-    $(document).ready(function(){
-        var shopListState = 1;
-        var $nextListBtn = $('#next_category');
-        var $prevListBtn = $('#prev_category');
-        var $shopList = $('.list_event');
+    $(document).ready(function(){   
+        var shopListState = 1,
+            $nextListBtn = $('#next_category'),
+            $prevListBtn = $('#prev_category'),
+            $shopList = $('.list_event');
 
         $($nextListBtn).click(function(){
                 $shopList.css('display','none');
@@ -88,5 +88,18 @@
                 $(".light_mode_btn").attr("class","dark_mode_btn");
                 $modeState = 0;
             }
+        });
+    });
+/*poster List*/
+    $(document).ready(function(){
+        $('#next_poster').click(function(){
+            $('.poster_thumb_container:last-child').css('display','flex').siblings().css('display','none');
+            $('#next_poster').css('display','none');
+            $('#prev_poster').css('display','block');
+        });
+        $('#prev_poster').click(function(){
+            $('.poster_thumb_container:first-child').css('display','flex').siblings().css('display','none');
+            $('#next_poster').css('display','block');
+            $('#prev_poster').css('display','none');
         });
     });
