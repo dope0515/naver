@@ -388,7 +388,8 @@ header .search_rate_container .search_content .weather_icon {
 
 header .search_rate_container .search_content .min_temp {
   font-size: 13px;
-  margin: 0 4px 0 8px;
+  font-weight: 700;
+  margin: 1px 4px 0 8px;
   color: #2586ee;
 }
 
@@ -401,8 +402,13 @@ header .search_rate_container .search_content .min_temp::after {
 
 header .search_rate_container .search_content .max_temp {
   font-size: 13px;
+  font-weight: 700;
   margin-right: 8px;
   color: #e9564a;
+}
+
+header .search_rate_container .search_content span {
+  margin-top: 1px;
 }
 
 header .service_list_container {

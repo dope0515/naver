@@ -314,7 +314,8 @@ header {
             }
             .min_temp {
                 font-size: 13px;
-                margin: 0 4px 0 8px;
+                font-weight: $bold;
+                margin: 1px 4px 0 8px;
                 color: #2586ee;
             }
             .min_temp::after {
@@ -325,8 +326,12 @@ header {
             }
             .max_temp {
                 font-size: 13px;
+                font-weight: $bold;
                 margin-right: 8px;
                 color: #e9564a;
+            }
+            span {
+                margin-top: 1px;
             }
         }
     }
