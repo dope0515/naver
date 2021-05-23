@@ -4,7 +4,14 @@
         $( 'html, body' ).animate( { scrollTop : 0 },0 );
     });
     });
-
+/*gnb Service*/
+$(document).ready(function(){
+    $('#sl_toggle').click(function(){
+        $('.service_list_container').toggle();
+        $(this).text($(this).text() == '접기' ? '더보기' : '접기');
+        console.log(this)
+    });
+});
 /*news List*/
     $(document).ready(function(){
         var listState = 1,

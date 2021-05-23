@@ -278,13 +278,7 @@ header {
                     font-size: $middle;
                     font-weight: $bold;
     
-                }
-                .down_arrow {
-                    @include icon(11px, 7px, 440px 410px,-319px -258px);
-                    margin-bottom: 2px;
                 }     
-                
-                
             }
             .nav_item:nth-child(-n+7) .nav_content {
                 color : $naver;
@@ -337,7 +331,8 @@ header {
     }
     .service_list_container {
         width: 100%;
-        position: absolute;
+        background-color: #fff;
+        position: relative;
         box-shadow: 0 4px 4px 0 rgba(0,0,0,.12);
         display: none;
         .service_list_box {
@@ -349,16 +344,52 @@ header {
             overflow: hidden;
     
             .list_service {
-                font-size: 13px;
-                line-height: 26px;
                 display: table-cell;
                 padding: 0 18px 0 19px;
                 border-left: 1px solid #e4e8eb;
                 border-width: 0 1px;
+                dt,dd {
+                    line-height: 26px;
+                }
+                a {
+                    font-size: 13px;
+                }
+                .service_title {
+                    font-weight: $bold;
+                    margin-bottom: 3px;
+                }
             }
             .list_service:last-child {
                 border-right: 1px solid #e4e8eb;
             }
+        }
+        .service_list_btn {
+            width: 270px;
+            height: 32px;
+            padding: 10px 0;
+            display: flex;
+            align-content: center;
+            background-color: #fff;
+            position: absolute;
+            top: -53px;
+            right: 80px;
+             a{
+                 display: inline-block;
+                padding: 7px 13px 5px;
+                border: 1px solid #dae1e6;
+                border-radius: 30px;
+             }
+             a:hover {
+                text-decoration: underline;
+            }
+             .all_service_btn {
+                 margin-right: 6px;
+             }
+             .set_mn_btn::before {
+                content: '';
+                @include icon(11px, 11px, 440px 410px,-319px -308px);
+                vertical-align: -1px;
+             }
         }
     }
 }
