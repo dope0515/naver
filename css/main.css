@@ -403,7 +403,7 @@ header .search_rate_container .search_content span {
 header .service_list_container {
   width: 100%;
   background-color: #fff;
-  position: relative;
+  position: absolute;
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.12);
   display: none;
@@ -489,8 +489,8 @@ header .service_list_container .service_list_btn .set_mn_btn::before {
   width: 100%;
   position: fixed;
   border-bottom: 1px solid #19ce60;
-  -webkit-animation-name: 'animate';
-          animation-name: 'animate';
+  -webkit-animation-name: 'header_move';
+          animation-name: 'header_move';
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: backwards;
@@ -628,7 +628,7 @@ header .service_list_container .service_list_btn .set_mn_btn::before {
   display: none;
 }
 
-@-webkit-keyframes animate {
+@-webkit-keyframes header_move {
   0% {
     top: -50px;
   }
@@ -637,7 +637,7 @@ header .service_list_container .service_list_btn .set_mn_btn::before {
   }
 }
 
-@keyframes animate {
+@keyframes header_move {
   0% {
     top: -50px;
   }
