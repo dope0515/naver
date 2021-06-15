@@ -489,8 +489,8 @@ header .service_list_container .service_list_btn .set_mn_btn::before {
   width: 100%;
   position: fixed;
   border-bottom: 1px solid #19ce60;
-  -webkit-animation-name: 'header_move';
-          animation-name: 'header_move';
+  -webkit-animation-name: header_move;
+          animation-name: header_move;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: backwards;
