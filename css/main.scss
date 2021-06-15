@@ -398,7 +398,7 @@ header {
     width: 100%;
     position: fixed;
     border-bottom: 1px solid $naver2;
-    animation-name: header_move;
+    animation-name: headermove;
     animation-duration: 0.5s;
     animation-fill-mode: backwards;
     .header_container {
@@ -483,7 +483,7 @@ header {
         display: none;
     }
 }
-@keyframes header_move {
+@keyframes headermove {
     0% {
         top: -50px;
     }

@@ -489,8 +489,8 @@ header .service_list_container .service_list_btn .set_mn_btn::before {
   width: 100%;
   position: fixed;
   border-bottom: 1px solid #19ce60;
-  -webkit-animation-name: header_move;
-          animation-name: header_move;
+  -webkit-animation-name: headermove;
+          animation-name: headermove;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
   -webkit-animation-fill-mode: backwards;
@@ -628,7 +628,7 @@ header .service_list_container .service_list_btn .set_mn_btn::before {
   display: none;
 }
 
-@-webkit-keyframes header_move {
+@-webkit-keyframes headermove {
   0% {
     top: -50px;
   }
@@ -637,7 +637,7 @@ header .service_list_container .service_list_btn .set_mn_btn::before {
   }
 }
 
-@keyframes header_move {
+@keyframes headermove {
   0% {
     top: -50px;
   }
